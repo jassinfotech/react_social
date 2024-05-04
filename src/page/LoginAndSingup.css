@@ -1,0 +1,269 @@
+/* CSS styling for both login and sign up pages. */
+
+.loginBody,
+.signUpBody
+{
+        /* General design of the pages. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 95vh;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    /* Responsive ability for page body. */
+    .loginBody,
+    .signUpBody {
+        width: auto;
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+        /* Responsive ability for page body. */
+    .loginBody,
+    .signUpBody {
+        width: auto;
+        height: 90vh;
+    }
+}
+
+
+.loginTitle
+{
+        /* "Every voice matters", style. */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size:  30px;
+}
+
+@media screen and (max-width: 768px) {
+        /* Responsive ability for "Every voice matters". */
+    .loginTitle {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+        /* Responsive ability for "Every voice matters". */
+    .loginTitle {
+        font-size: 20px;
+    }
+}
+
+
+.logInFrame,
+.signUpFrame
+{
+        /* Login and sign up frame design. */
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 12%;
+    border: white solid 3px;
+    width: 30vw;
+    margin: auto;
+
+        /* Glassy style of the Sign Up frame. */
+        /* The code for background-color: #0039a6; */
+    background: rgba(0, 57, 166, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+}
+
+@media only screen and (max-width: 1000px) {
+        /* Responsiveness for login and sign up frame. */
+    .logInFrame,
+    .signUpFrame{
+        width: 60%;
+        height: auto;
+        border-radius: 7%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+        /* Responsiveness for login and sign up frame. */
+    .logInFrame,
+    .signUpFrame{
+        width: 80%;
+        height: auto;
+        border-radius: 7%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+        /* Responsiveness for login and sign up frame. */
+    .logInFrame,
+    .signUpFrame{
+        width: 80%;
+        height: auto;
+        border-radius: 7%;
+    }
+}
+
+
+.logInFrameText,
+.signUpFrameText
+{
+        /* Login and sign frame title (Blue canary) text. */
+    font: 35px bold;
+}
+
+
+.logInFrame > form > input,
+.signUpForm > form > input,
+.submitButton
+{
+        /* Form input fields and button design. */
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    justify-items: center;
+    align-content: stretch;
+    align-items: stretch;
+    padding: 10px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-radius: 12px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+        /* Responsiveness for form input fields and button design. */
+    .logInFrame > form > input,
+    .signUpForm > form > input,
+    .submitButton{
+        font-size: 16px;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+        /* Responsiveness for form input fields and button design. */
+    .logInFrame > form > input,
+    .signUpForm > form > input,
+    .submitButton{
+        font-size: 14px;
+        width: 90%;
+    }
+}
+
+.submitButton{
+    text-align: center!important;
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.DOB
+{
+        /* Sign up page "Date of birth" text. */
+    font-size: 19px;
+    margin: auto;
+}
+
+
+.submitButton,
+.singUpButton
+{
+        /* Login and sign up button width. */
+    width: 60% !important;
+}
+
+
+.submitButton:hover,
+.singUpButton:hover
+{
+        /* On button hover design. */
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.signUpForm > form > .signUpDate
+{
+        /* Sign up page time and date input design. */
+    text-align: center;
+    font-variant-caps: all-petite-caps;
+    font-size: 20px;
+    width: 70%;
+}
+
+
+.logInFrame > hr
+{
+        /* Horizontal line under login button. */
+    color: white;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+
+.links,
+.singUpLinkCont
+{
+        /* Login, Sign up, Forgot password links design. */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    font-size: 19px;
+    margin-bottom: 5%;
+}
+
+
+.links :link,
+.linkToLogin:link
+{
+    /* unvisited link */
+    color: #929AAB;
+}
+
+.links :hover,
+.linkToLogin:hover
+{
+    /* While hovered on the link */
+    color: red;
+}
+
+.links :visited,
+.linkToLogin:visited{
+    /* visited link */
+    color: aqua;
+}
+
+.links :active,
+.linkToLogin:active{
+    /* selected link */
+    color: blue;
+}
+
+
+.signUpForm > p
+{
+    font-size: 190px;
+}
